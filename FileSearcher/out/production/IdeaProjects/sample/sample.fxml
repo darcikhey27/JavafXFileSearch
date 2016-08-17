@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.Controller">
+    <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="396.0" prefWidth="621.0">
+            <children>
+                <TextField fx:id="textDate" layoutX="200.0" layoutY="185.0" promptText="date"/>
+                <TextField fx:id="textContent" layoutX="200.0" layoutY="151.0" promptText="content"/>
+                <TextField fx:id="textFileExt" layoutX="200.0" layoutY="116.0"
+                           promptText="File Extension (.java .rb .py)etc"/>
+                <TextField fx:id="textFileName" layoutX="200.0" layoutY="79.0" promptText="File name"/>
+                <Label layoutX="14.0" layoutY="83.0" prefHeight="17.0" prefWidth="133.0" text="Enter file name"/>
+                <Label layoutX="14.0" layoutY="120.0" prefHeight="17.0" prefWidth="133.0" text="Enter file extension"/>
+                <Label layoutX="14.0" layoutY="155.0" prefHeight="17.0" prefWidth="133.0" text="Enter file content"/>
+                <Label layoutX="14.0" layoutY="189.0" prefHeight="17.0" prefWidth="133.0" text="Enter file date"/>
+                <Label layoutX="14.0" layoutY="26.0" prefHeight="17.0" prefWidth="170.0"
+                       text="Enter the path to serach for"/>
+                <TextField fx:id="textPath" layoutX="200.0" layoutY="31.0" prefHeight="25.0" prefWidth="375.0"
+                           promptText="Enter path"/>
+                <Button fx:id="btnSearch" layoutX="397.0" layoutY="152.0" mnemonicParsing="false"
+                        onAction="#handleButtonAction" prefHeight="48.0" prefWidth="117.0" text="Search"/>
+                <Button fx:id="btnClear" layoutX="397.0" layoutY="80.0" mnemonicParsing="false" prefHeight="48.0"
+                        prefWidth="117.0" text="Clear Fields"/>
+                <TextField fx:id="textOutput" layoutX="15.0" layoutY="236.0" prefHeight="141.0" prefWidth="512.0"
+                           promptText="output"/>
+            </children>
+        </AnchorPane>
+    </content>
+</ScrollPane>
